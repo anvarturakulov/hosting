@@ -417,6 +417,23 @@
 .red__line{
     background-color: #fc3d4d;
 }
+.www{
+    color: #000;
+    .minititle{
+        margin-top: 130px;
+        color: #fc3d4d;
+    }
+    .bigtitle{
+        margin-bottom: 0px;        
+    }
+    &-img{
+        margin: 0 auto;
+        width: 1036px;
+        height: 663px;
+        @include ibg;
+    }
+}
+
 
 @import 'media';
 //end present box

@@ -204,7 +204,7 @@
 .inner{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 70px;
 }
 .item{
@@ -299,6 +299,30 @@
 .green-img{
     width: 541px;
     height: 492px;
+}
+
+.lock-img{
+    width: 497px;
+    height: 501px;
+}
+
+.orange__line{
+    background-color: #ee7f8f;
+}
+
+.extra{
+    color: #000;
+}
+
+.ul__extra{
+    max-width: 560px;
+    ul{
+        li{
+            &::before{
+                color: #ee7f8f;
+            }
+        }
+    }
 }
 
 @import 'media';

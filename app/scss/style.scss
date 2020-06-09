@@ -788,6 +788,66 @@
     margin-bottom: 25px;
 }
 
+.real{
+    .minititle{
+        color: #ff1061;
+        margin-top: 100px;
+    }
+    .bigtitle{
+        color: #000;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__item{
+        width: 125px;
+        text-align: center;
+        color: #000;
+        &-count{
+            font-size: 80px;
+            line-height: 80px;
+            font-weight: 100; 
+        }    
+        &-text{
+            font-size: 15px;
+        }
+    }
+
+}
+
+.customer{
+    color: #fc3d4d;
+}
+.registred{
+    color: #ffa128;   
+}
+.center{
+    color: #7133f8;
+}
+.staff{
+    color: #508bd9;    
+}
+.available{
+    color: #04b5c9;
+}
+.support{
+    color: #60c79a;
+}
+
+.real{
+    height: 720px;
+}
+
+.real__bg{
+    width: 100%;
+    height: 586px;
+    @include ibg;    
+
+}
+
 @import 'media';
 //end present box
+
 

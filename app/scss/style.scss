@@ -166,6 +166,7 @@
     font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .bigtitle{
@@ -173,14 +174,132 @@
     line-height: 34px;
     margin-top: 20px;
     margin-bottom: 30px;
+    text-align: center;
 
 }
 .text{
     max-width: 760px;
     font-size: 16px;
     margin: 0 auto;
+    text-align: center;
 }
 
+.people{
+    color: #000;
+}
+
+.caption{
+    &__title{
+        font-size: 20px;
+    }
+    &__line{
+        height: 2px;
+        width: 100px;
+        background-color: #4287c5;
+        margin-top: 27px;
+        margin-bottom: 26px;
+    }
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+.item{
+    max-width: 560px;
+    &__text{
+        max-width: 500px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__bottom-img{
+        width: 175px;
+        height: 86px;
+        @include ibg;
+    }
+}
+
+.ul__box{
+    display: flex;
+    justify-content: space-around;
+    max-width: 280px;
+    ul+ul{
+        margin-left: 45px;
+    }
+    ul{
+        li{
+            position: relative;
+            &::before{
+                position: absolute;
+                left: -20px;
+                content:">";
+                color: #4287c5;
+            }
+        }
+    }
+}
+
+.item__img{
+    @include ibg;
+}
+
+.multi-img{
+    width: 703px;
+    height: 522px;
+}
+
+.optimized{
+    color: #000;
+}
+
+.optim-img{
+    width: 503px;
+    height: 427px;
+}
+
+.ul__optimized{
+    max-width: 560px;
+    ul{
+        li{
+            &::before{
+                color: #9362c7;
+            }
+        }
+    }
+}
+
+.purple__line{
+    background-color: #9362c7;
+}
+
+.ul__green{
+    max-width: 560px;
+    ul{
+        li{
+            &::before{
+                color: #46cea1;
+            }
+        }
+    }
+}
+
+
+.green__line{
+    background-color: #46cea1;
+}
+.green{
+    color: #000;
+}
+
+.green-img{
+    width: 541px;
+    height: 492px;
+}
 
 @import 'media';
 //end present box

@@ -434,6 +434,94 @@
     }
 }
 
+.pricing{
+    color: #000;
+    .minititle{
+        margin-top: 130px;
+        color: #fc3d4d;
+    }
+    .bigtitle{
+        margin-bottom: 30px;        
+    }
+    &__inner{
+        display: flex;
+    }
+}
+
+.pricing__item{
+    color: #fff;
+    margin-top: 70px;
+    height: 675px;
+    width: 275px;
+    position: relative;
+    border-radius: 3px;
+    text-align: center;
+    &-title{
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 45px;
+    }
+    &-text{
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    &-price{
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 60px;
+    }
+    &-mo{
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    &-info{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    &-link{
+        margin-top: 50px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 20px 40px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+    &-img{
+        position: absolute;
+        width: 250px;
+        height: 273px;
+        @include ibg;
+        bottom: -180px;
+    }
+}
+
+.pricing__one{
+    filter: drop-shadow(0 0 21.5px rgba(8,149,162,0.52));
+    background-image: linear-gradient(-27deg, #04d8d6 0%, #039dbf 100%);
+}
+
+.pricing__two{
+    filter: drop-shadow(0 0 21.5px rgba(230,11,87,0.5));
+    background-image: linear-gradient(-27deg, #ff0565 0%, #f97135 100%);
+}
+
+.pricing__three{
+    filter: drop-shadow(0 0 12px rgba(74,14,217,0.49));
+    background-image: linear-gradient(135deg, #c165dd 0%, #5b27fd 100%);
+}
+
+.pricing__four{
+    filter: drop-shadow(0 0 16px rgba(255,140,19,0.53));
+    background-image: linear-gradient(135deg, #ffcb51 0%, #ff7b01 100%);
+}
+
+.link-four{
+    margin-top: 85px;
+}
+
 
 @import 'media';
 //end present box

@@ -671,6 +671,71 @@
     }
 }
 
+.testimonials__item{
+    position: relative;
+    max-width: 350px;
+    height: 416px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 35px rgba(88,88,88,0.24));
+    // background-color: #ffffff;
+    &+.testimonials__item{
+        margin-left: 20px;
+    }
+    border: 1px solid #777777;
+}
+
+.testimonials__item-img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #8093ad;
+    border-radius: 50%;
+    left: 35%;
+    top: -50px;
+    z-index: 5;
+
+}
+
+.testimonials__item-text{
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 275px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4e6367;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials__item-author{
+    margin: 0 auto;
+    width: 180px;
+    height: 63px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #4e6367;
+    font-family: "Heebo";
+    font-weight: 400;
+    text-align: center;
+}
+
+.testimonials{
+    .minititle{
+        color: #ff1061;
+    }
+    .bigtitle{
+        color: #000;
+    }
+    .text{
+        color: #777;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+}
+
+
 @import 'media';
 //end present box
 

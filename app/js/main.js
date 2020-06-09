@@ -8,4 +8,19 @@ $(function(){
     //   $('.header__menu').slideToggle();
     // });
 
+    $(".testimonials__inner").slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: false,
+        arrows:false,
+        // responsive: [
+        //   {
+        //     breakpoint: 920,
+        //     settings: {
+        //       arrows:false
+        //     }
+        //   }
+        // ]
+      });
+
 });

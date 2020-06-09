@@ -3,7 +3,183 @@
 @import 'fonts';
 
 
+.header{
+    width: 1920px;
+    height: 2545px;
+    padding-top: 55px;
+    &__box{
+        display: flex;
+        height: 45px;
+        align-items: center;
+    }
+    &__menu{
+        margin-left: 300px;
+        ul{
+            li{
+                display: inline-block;
+                &+li{
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+    &__link{
+        background-color: #ff1061;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        height: 45px;
+        width: 125px;
+        text-align: center;
+        padding: 10px 30px 18px;
+        border-radius: 30px;
+        margin-left: 30px;
+    }
+}
 
+.search{
+    &__box{
+        margin-top: 165px;
+        text-align: center;
+    }
+    &__box-form{
+        position: relative;
+        width: 600px;
+        margin: 0 auto;
+        input{
+            margin-top: 65px;
+            height: 80px;
+            width: 100%;
+            padding: 32px 40px 36px 40px;
+            font-size: 16px;
+            color: #a4b0b1;
+            &::placeholder{
+                font-size: 16px;
+                color: #a4b0b1;
+            }
+            border-radius: 35px;
+            border: none;
+            outline: none;
+            
+        }
+        
+        button{
+            position: absolute;
+            height: 23px;
+            width: 23px;
+            @include ibg;
+            right: 40px;
+            top: 95px;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            
+        }
+
+    }
+    &__text{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    &__title{
+        font-size: 80px;
+        line-height: 100px;
+        font-weight: 100;
+    }
+    
+}
+.features{
+    margin-top: 860px;
+    text-align: center;
+    &__inner{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{
+        background-color: #2d102c;
+        margin-top: 40px;
+        width: 255px;
+        height: 313px;
+        border-radius: 5px;
+        filter: drop-shadow(0px 9px 9px rgba(0,0,0,0.2));
+        background-color: rgba(2,2,2,0.23921568627450981);
+    }
+    &__img{
+        @include ibg;
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }   
+    &__text{
+        font-size: 15px;
+    }
+}
+
+.tech1{
+    width: 174px;
+    height: 173px;
+}
+
+.tech2{
+    width: 152px;
+    height: 194px;
+    margin-top: -20px;
+}
+
+.tech3{
+    width: 181px;
+    height: 172px;
+}
+
+.tech4{
+    width: 175px;
+    height: 175px;
+}
+
+.tech5{
+    width: 188px;
+    height: 176px;
+}
+
+.tech6{
+    width: 172px;
+    height: 178px;
+}
+
+.tech7{
+    width: 178px;
+    height: 178px;
+}
+
+.tech8{
+    width: 178px;
+    height: 181px;
+}
+
+.minititle{
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.bigtitle{
+    font-size: 34px;
+    line-height: 34px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+.text{
+    max-width: 760px;
+    font-size: 16px;
+    margin: 0 auto;
+}
 
 
 @import 'media';

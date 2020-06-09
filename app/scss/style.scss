@@ -636,6 +636,32 @@
     height: 45px;
 }
 
+.leading{
+    position: relative;
+    height: 1370px;
+    &__bg{
+        position: absolute;
+        width: 1314px;
+        height: 1332px;
+        @include ibg;
+        right: 0px;
+        z-index: 1;
+    }
+    &__title{
+        //margin-top: 1000px;
+        position: absolute;
+        font-size: 80px;
+        line-height: 90px;
+        color: #333333;
+        font-weight: 250;
+        text-align: center;
+        z-index: 2;
+        bottom: 400px;
+        width: 700px;
+        left: 300px;
+        
+    }
+}
 
 @import 'media';
 //end present box
